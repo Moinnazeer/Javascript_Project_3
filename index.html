@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #FFB6C1; /* LightPink for a light magenta background */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 300px;
+            padding: 16px;
+            background-color: #FFC0CB; /* Pink for a light magenta form */
+            border: 5px solid #d691e5; /* Magenta for border */
+            color: #800080; /* Purple for text */
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        input[type=text], input[type=password] {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #FFF0F5; /* LavenderBlush for input fields */
+        }
+        .btn {
+            background-color: #8936b3; /* Magenta for button */
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Sign Up</button>
+    </div>
+
+    <script>
+        document.querySelector('.btn').addEventListener('click', function() {
+            alert('Signup successful!');
+        });
+    </script>
+</body>
+</html>
